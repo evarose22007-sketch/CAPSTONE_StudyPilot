@@ -146,9 +146,6 @@ One straightforward setup (all have free tiers):
 3. **Client — Vercel (or Netlify).** Import the repo with root directory `client`, framework Vite. Set `VITE_API_URL` to your API URL plus `/api`, e.g. `https://studypilot-api.onrender.com/api`. `vercel.json` (Vercel) and `public/_redirects` (Netlify) make page refreshes on `/tasks` and `/courses` work.
 4. **Check the live app:** register, refresh on `/tasks`, log out and in again, and confirm in the browser's Network tab that no request goes to `localhost`.
 
-## Design notes
-
-The interface is meant to feel like a notebook on a desk rather than a dashboard product: cool paper background, navy "ink", and a single highlighter yellow that only marks what's due today and keyboard focus. Headings use Bricolage Grotesque; body text uses Atkinson Hyperlegible, a typeface designed for legibility. The line illustrations (desk scene, empty checklist, books, sprout, map) are hand-made inline SVGs in `client/src/components/Illustrations.jsx` and take their colours from the CSS variables.
 
 ## Known limitations and next steps
 
